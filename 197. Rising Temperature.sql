@@ -65,7 +65,7 @@ In 2015-01-02, the temperature was higher than the previous day (10 -> 25).
 In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 */
 
--- Respons
+-- Test Result
 /*
 Accepted
 Runtime: 96 ms

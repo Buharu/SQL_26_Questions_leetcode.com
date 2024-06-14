@@ -59,7 +59,7 @@ Output:
 +------+
 */
 
--- Respons
+-- Test Result
 /*
 Accepted
 Runtime: 76 ms

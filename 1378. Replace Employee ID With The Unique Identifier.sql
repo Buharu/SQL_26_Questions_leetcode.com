@@ -84,7 +84,7 @@ The unique ID of Winston is 3.
 The unique ID of Jonathan is 1.
 */
 
--- Respons
+-- Test Result
 /*
 Accepted
 Runtime: 97 ms
