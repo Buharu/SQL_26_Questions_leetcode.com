@@ -13,14 +13,24 @@
   
   Summary of statements, clauses, functions, joins used to solve the problems:
   - 197. Rising Temperature.sql : <b>WITH, SELECT, LEFT JOIN, DATE_ADD, INTERVAL, WHERE</b>
+  - 570. Managers with at Least 5 Direct Reports.sql : SELECT, WHERE, IN, <b>Subquery</b>, GROUP BY, HAVING, <b>COUNT</b>
+  - 577. Employee Bonus.sql : SELECT, LEFT JOIN, WHERE, OR, IS NULL
   - 584. Find Customer Referee.sql : SELECT, WHERE, <b>OR</b>, <b>IS NULL</b>
   - 595. Big Countries.sql : SELECT, WHERE, OR
+  - 620. Not Boring Movies.sql : SELECT, WHERE, AND, ORDER BY
   - 1068. Product Sales Analysis I.sql : SELECT, WHERE, LEFT JOIN, <b>ORDER BY</b>
+  - 1075. Project Employees I.sql : SELECT, ROUND, SUM, COUNT, LEFT JOIN, GROUP BY
   - 1148. Article Views I.sql : SELECT, WHERE, <b>GROUP BY</b>, ORDER BY
+  - 1193. Monthly Transactions I.sql : <b>2 x WITH</b>, SELECT, LEFT JOIN, WHERE, GROUP BY
+  - 1211. Queries Quality and Percentage.sql : 2 x WITH, SELECT, ROUND, COUNT, SUM, LEFT JOIN, WHERE, GROUP BY
+  - 1251. Average Selling Price.sql : WITH, SELECT, ROUND, SUM, LEFT JOIN, <b>BETWEEN</b>, AND, GROUP BY  
+  - 1280. Students and Examinations.sql : SELECT, COUNT, <b>CROSS JOIN</b>, LEFT JOIN, AND, GROUP BY, ORDER BY
   - 1378. Replace Employee ID With The Unique Identifier.sql : SELECT, LEFT JOIN, ORDER BY
   - 1581. Customer Who Visited but Did Not Make Any Transactions.sql : SELECT, <b>COUNT</b>, LEFT JOIN, WHERE, IS NULL, GROUP BY
+  - 1633. Percentage of Users Attended a Contest.sql : WITH, SELECT, COUNT, ROUND, GROUP BY, ORDER BY
   - 1661. Average Time of Process per Machine.sql : <b>WITH, SELECT, CONCAT, WHERE, LEFT JOIN, ROUND, SUM, GROUP BY</b>
   - 1683. Invalid Tweets.sql : SELECT, WHERE, <b>LENGTH</b>
   - 1757. Recyclable and Low Fat Products.sql : SELECT, WHERE, <b>AND</b>
+  - 1934. Confirmation Rate.sql : WITH, SELECT, COUNT, ROUND, <b>2 x LEFT JOIN</b>, AND, GROUP BY
 
 </pre>
