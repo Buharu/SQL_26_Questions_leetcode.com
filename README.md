@@ -21,7 +21,7 @@
   - 1068. Product Sales Analysis I.sql : SELECT, WHERE, LEFT JOIN, <b>ORDER BY</b>
   - 1075. Project Employees I.sql : SELECT, ROUND, SUM, COUNT, LEFT JOIN, GROUP BY
   - 1148. Article Views I.sql : SELECT, WHERE, <b>GROUP BY</b>, ORDER BY
-  - 1193. Monthly Transactions I.sql : <b>2 x WITH</b>, SELECT, LEFT JOIN, WHERE, GROUP BY
+  - 1193. Monthly Transactions I.sql : <b>2 x WITH</b>, SELECT, <b>LEFT</b>, LEFT JOIN, WHERE, GROUP BY
   - 1211. Queries Quality and Percentage.sql : 2 x WITH, SELECT, ROUND, COUNT, SUM, LEFT JOIN, WHERE, GROUP BY
   - 1251. Average Selling Price.sql : WITH, SELECT, ROUND, SUM, LEFT JOIN, <b>BETWEEN</b>, AND, GROUP BY  
   - 1280. Students and Examinations.sql : SELECT, COUNT, <b>CROSS JOIN</b>, LEFT JOIN, AND, GROUP BY, ORDER BY
