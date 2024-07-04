@@ -1,4 +1,5 @@
 -- 1211. Queries Quality and Percentage # Write your MySQL query statement below
+# Write your MySQL query statement below
 WITH quality  AS
 (
     SELECT
@@ -18,19 +19,39 @@ total_query_name AS
         queries
     GROUP BY
         query_name
+), 
+poor_queries AS
+(
+    SELECT
+        query_name,
+        COUNT(query_name) AS count_query_name
+    FROM
+        queries
+    WHERE
+        rating < 3
+    GROUP BY
+        query_name
 )
 SELECT
     t.query_name,
     ROUND(q.quality / t.count_query_name , 2) AS quality,
-    ROUND( COUNT(DISTINCT t.query_name) / t.count_query_name * 100, 2) AS poor_query_percentage     
+    ROUND( CASE 
+            WHEN p.count_query_name is null then 0 
+            else p.count_query_name end / t.count_query_name * 100, 2) AS poor_query_percentage     
 FROM
     total_query_name As t
 LEFT JOIN
     quality AS q
 ON
     q.query_name = t.query_name
+LEFT JOIN
+    poor_queries AS p
+ON
+    p.query_name = q.query_name
+WHERE
+    t.query_name IS NOT NULL
 GROUP BY
-    query_name
+    t.query_name
 
 -- Question
 /*

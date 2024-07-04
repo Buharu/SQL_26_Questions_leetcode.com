@@ -11,7 +11,8 @@ WITH total_units AS
 )
 SELECT
     p.product_id,
-    ROUND(SUM(price * units) / t.total_units, 2) AS average_price 
+    CASE WHEN ROUND(SUM(price * units) / t.total_units, 2) IS NULL THEN 0
+    ELSE ROUND(SUM(price * units) / t.total_units, 2) END AS average_price 
 FROM
     Prices AS p
 LEFT JOIN

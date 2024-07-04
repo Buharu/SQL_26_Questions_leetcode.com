@@ -1,4 +1,4 @@
--- 620. Not Boring Movies # Write your MySQL query statement below
+-- 620. Not Boring Movies.sql # Write your MySQL query statement below
 SELECT
     id,
     movie,

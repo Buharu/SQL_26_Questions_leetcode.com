@@ -1,9 +1,10 @@
 -- 1193. Monthly Transactions I # Write your MySQL query statement below
+# Write your MySQL query statement below
 WITH approved_total AS
 (
     SELECT
         LEFT(trans_date, 7) AS month,
-        country,
+        CASE WHEN country IS NULL THEN "null_country" ELSE country END AS country,
         COUNT(state) AS approved_count, 
         SUM(amount) AS approved_total_amount 
     FROM
@@ -17,7 +18,7 @@ trans_total_amount AS
 (
    SELECT
         LEFT(trans_date, 7) AS month,
-        country,
+        CASE WHEN country IS NULL THEN "null_country" ELSE country END AS country,
         COUNT(state) AS trans_count , 
         SUM(amount) AS trans_total_amount  
     FROM
@@ -27,11 +28,13 @@ trans_total_amount AS
 )
 SELECT
     t.month,
-    t.country,
+    CASE WHEN t.country = "null_country" THEN NULL ELSE t.country END AS country,
     t.trans_count,
-    a.approved_count,
+    CASE WHEN a.approved_count IS NULL THEN 0
+    ELSE a.approved_count END AS approved_count,
     t.trans_total_amount,
-    a.approved_total_amount 
+    CASE WHEN a.approved_total_amount IS NULL THEN 0
+    ELSE a.approved_total_amount END AS approved_total_amount
 FROM
     trans_total_amount AS t
 LEFT JOIN
