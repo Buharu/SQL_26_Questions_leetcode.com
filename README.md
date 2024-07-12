@@ -9,11 +9,12 @@
   - the respons of the server after run the checks on the solution I propused
 
   I hope all the information write bellow to be useful for the ones that once only a hit with what statements, clauses, functions to use to solve the problems.
-  The ones that were write with <b>bold</b> are the uniq ones.
+  The ones that were write with <b>bold</b> are the unique ones.
   
   Summary of statements, clauses, functions, joins used to solve the problems:
   - 197. Rising Temperature.sql : <b>WITH, SELECT, LEFT JOIN, DATE_ADD, INTERVAL, WHERE</b>
-  - 570. Managers with at Least 5 Direct Reports.sql : SELECT, WHERE, IN, <b>Subquery</b>, GROUP BY, HAVING, <b>COUNT</b>
+  - 550. Game Play Analysis IV.sql : WITH, SELECT, <b>MIN, ROUND, COUNT, DISTINCT, Subquery</b>, LEFT JOIN, INTERVAL
+  - 570. Managers with at Least 5 Direct Reports.sql : SELECT, WHERE, IN, Subquery, GROUP BY, HAVING, COUNT
   - 577. Employee Bonus.sql : SELECT, LEFT JOIN, WHERE, OR, IS NULL
   - 584. Find Customer Referee.sql : SELECT, WHERE, <b>OR</b>, <b>IS NULL</b>
   - 595. Big Countries.sql : SELECT, WHERE, OR
@@ -30,6 +31,7 @@
   - 1633. Percentage of Users Attended a Contest.sql : WITH, SELECT, COUNT, ROUND, GROUP BY, ORDER BY
   - 1661. Average Time of Process per Machine.sql : <b>WITH, SELECT, CONCAT, WHERE, LEFT JOIN, ROUND, SUM, GROUP BY</b>
   - 1683. Invalid Tweets.sql : SELECT, WHERE, <b>LENGTH</b>
+  - 1174. Immediate Food Delivery II.sql : SELECT, 2 x WITH, ROUND, COUNT,DISTINCT, LEFT JOIN 
   - 1757. Recyclable and Low Fat Products.sql : SELECT, WHERE, <b>AND</b>
   - 1934. Confirmation Rate.sql : WITH, SELECT, COUNT, ROUND, <b>2 x LEFT JOIN</b>, AND, GROUP BY
 
